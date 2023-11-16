@@ -2,7 +2,7 @@ import '../styles/App.css';
 import {db} from "../firebase/config.js"
 import { useEffect, useState } from 'react';
 import { getDocs, collection } from 'firebase/firestore';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import ReviewsPreviews from './ReviewsPreviews.js';
 import Form from './Form.js';
@@ -30,25 +30,13 @@ function App() {
     getReviews()
   }, [])
 
-  return <Router>
-    <div className="App">
-      <Routes>
-
-        <Route path="/" element={
-          <div>
-            <div className='title'>
-              <img src={logo} alt="AVIS LATRINES" className="logo" />
-              <img src={scrollDown} alt="Scroll Down" className="scroll-down"/>  
-            </div>
-            <ReviewsPreviews reviews={reviews} />
-          </div>
-        } />
-
-        <Route path="/submit/:placeid" element={<Form />} />
-
-      </Routes>
+  return <div>
+    <div className='title'>
+      <img src={logo} alt="AVIS LATRINES" className="logo" />
+      <img src={scrollDown} alt="Scroll Down" className="scroll-down"/>  
     </div>
-  </Router>
+    <ReviewsPreviews reviews={reviews} />
+  </div>
 }
 
 export default App;

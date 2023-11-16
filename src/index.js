@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App';
+import App from './components/App.js';
+import Form from "./components/Form.js"
 import reportWebVitals from './reportWebVitals'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
   <React.StrictMode >
-    <App />
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" exact element={<App />} />
+          <Route path="/submit/:placeid" element={<Form />} />
+        </Routes>
+      </div>
+    </Router>
   </React.StrictMode>
 );
 
