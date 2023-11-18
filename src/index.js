@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App.jsx';
 import Form from "./components/Form.jsx"
+import Footer from './components/Footer.jsx';
 import reportWebVitals from './reportWebVitals'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ root.render(
         </Routes>
       </div>
     </Router>
+    <Footer />
   </React.StrictMode>
 );
 

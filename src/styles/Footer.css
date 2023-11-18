@@ -1,0 +1,14 @@
+footer {
+    background: plum;
+    padding: 25px;
+    box-shadow: 0 0 10px #00000088;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-grid img {
+    height: 25px
+}
