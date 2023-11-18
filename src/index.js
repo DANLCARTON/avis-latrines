@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App.js';
-import Form from "./components/Form.js"
+import App from './components/App.jsx';
+import Form from "./components/Form.jsx"
 import reportWebVitals from './reportWebVitals'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 

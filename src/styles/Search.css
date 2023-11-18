@@ -1,0 +1,16 @@
+.search .search-input,
+.search .sort {
+    font-size: 16px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding: 2px 10px;
+    border: none;
+    box-shadow: inset 0 0 5px #00000088;
+    border-radius: 5px;
+    margin: 50px 10px 10px 10px
+}
+
+@media screen and (max-width: 740px) {
+    .search .sort {
+        margin: 10px 10px 50px 10px;
+    }
+}

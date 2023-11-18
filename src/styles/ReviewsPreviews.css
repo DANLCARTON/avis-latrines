@@ -1,3 +1,7 @@
+.reviews {
+    min-height: 100vh
+}
+
 .review-preview {
     box-shadow: 0 0 10px #00000088;
     width: 50vw;
@@ -52,7 +56,6 @@
         box-shadow: none;
         width: 90vw;
         padding: 0 0 50px 0;
-        border-bottom: 1px dashed black;
         border-radius: 0
     }
     .review-preview .rate {

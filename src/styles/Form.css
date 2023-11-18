@@ -1,0 +1,110 @@
+.form h1 {
+    font-style: italic;
+}
+
+.form-form {
+    margin: 20px auto;
+    box-shadow: 0 0 10px #00000088;
+    padding: 20px;
+    border-radius: 50px;
+    width: 50vw;
+    max-width: 860px;
+}
+
+.form-form h3 {
+    margin: 30px auto 10px auto;
+    color: plum;
+}
+
+.form-place {
+    margin: 30px auto 10px auto;
+    background-color: plum;
+    border-radius: 50px;
+    color: white;
+    width: 25vw
+}
+
+.form-question {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-question input,
+.form-question textarea {
+    min-width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.form-question label {
+    width: 80%;
+    margin: 10px auto 0 auto;
+    text-align: left;
+}
+
+.form-question .short-text-input {
+    font-size: 16px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding: 2px 10px;
+    border: none;
+    box-shadow: inset 0 0 5px #00000088;
+    border-radius: 5px;
+}
+
+.form-question .long-text-input {
+    font-size: 16px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding: 2px 10px;
+    border: none;
+    box-shadow: inset 0 0 5px #00000088;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.final-question output {
+    font-size: x-large;
+}
+
+.form-form .submit {
+    margin: 30px auto 10px auto;
+    padding: 10px;
+    background-color: plum;
+    border-radius: 50px;
+    color: white;
+    width: 25vw;
+    font-size: larger;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    transition: ease-in-out .1s;
+}
+
+.form-form .submit:hover {
+    background-color: white;
+    color: plum;
+    box-shadow: 0 0 10px #00000080;
+}
+
+.required {
+    color: plum
+}
+
+@media screen and (max-width: 740px) {
+    .form-form {
+        box-shadow: none;
+        width: 90vw;
+        padding: 0 0 50px 0;
+        border-bottom: 1px dashed black;
+        border-radius: 0
+    }
+    .final-question output {
+        font-size: larger;
+    }
+    .form-place {
+        width: 90vw
+    }
+    .form-form .submit {
+        width: 90vw;
+    }
+}
